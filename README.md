@@ -13,10 +13,28 @@ Vfdmod is a LinuxCNC user space component designed to control any VFD that suppo
 
 # Screenshots
 
-![](https://raw.githubusercontent.com/aekhv/vfdmod/master/images/hc1-cplus-axis.png) ![](https://raw.githubusercontent.com/aekhv/vfdmod/master/images/hc1-cplus-hal.png)
+![](images/hc1-cplus-axis.png) ![](images/hc1-cplus-hal.png)
 
 # Documentation
 See vfdmod wiki: [https://github.com/aekhv/vfdmod/wiki](https://github.com/aekhv/vfdmod/wiki)
+
+# Build
+Build example for LinuxCNC 2.9.4.
+
+Dependencies:
+```bash
+sudo apt-get install qtbase5-dev libmodbus-dev
+```
+
+Build:
+```bash
+git clone https://github.com/kang2k10/vfdmod.git
+cd vfdmod
+mkdir build
+cd build
+qmake ../vfdmod.pro
+make
+```
 
 # Downloads
 Latest DEB-packages: [https://github.com/aekhv/vfdmod/releases](https://github.com/aekhv/vfdmod/releases)
